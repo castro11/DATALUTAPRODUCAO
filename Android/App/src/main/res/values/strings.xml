@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Dataluta</string>
+    <string-array name="categoria">
+        <item>Tomate</item>
+        <item>Cenoura</item>
+        <item>Batata</item>
+    </string-array>
+    <string-array name="municipio">
+        <item>Campinas</item>
+        <item>Hortolândia</item>
+        <item>Americana</item>
+    </string-array>
+    <string-array name="uf">
+        <item>SP</item>
+    </string-array>
+</resources>

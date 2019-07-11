@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".cadastra_produto">
+
+    <Button
+        android:id="@+id/btmLeg"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:backgroundTint="@color/colorAccent"
+        android:onClick="chamaLegumes"
+        android:text="Legumes"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgLegume" />
+
+    <Button
+        android:id="@+id/btmFruta"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="44dp"
+        android:backgroundTint="@color/colorAccent"
+        android:onClick="chamaFruta"
+        android:text="Frutas"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgFruta" />
+
+    <Button
+        android:id="@+id/btmCarnes"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="106dp"
+        android:layout_marginEnd="104dp"
+        android:layout_marginBottom="112dp"
+        android:backgroundTint="@color/colorAccent"
+        android:onClick="chamaCarne"
+        android:text="Carnes"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgCarne"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btmFolha"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:backgroundTint="@color/colorAccent"
+        android:onClick="chamaFolhagem"
+        android:text="Folhagens"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgFolhagem" />
+
+    <Button
+        android:id="@+id/btmOvos"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="44dp"
+        android:backgroundTint="@color/colorAccent"
+        android:onClick="chamaOvos"
+        android:text="Ovos"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgOvo" />
+
+    <ImageView
+        android:id="@+id/imgLegume"
+        android:layout_width="120dp"
+        android:layout_height="89dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="45dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtvCadastraProduto"
+        app:srcCompat="@drawable/legume" />
+
+    <ImageView
+        android:id="@+id/imgFruta"
+        android:layout_width="120dp"
+        android:layout_height="89dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtvCadastraProduto"
+        app:srcCompat="@drawable/frutas" />
+
+    <ImageView
+        android:id="@+id/imgFolhagem"
+        android:layout_width="120dp"
+        android:layout_height="89dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btmLeg"
+        app:srcCompat="@drawable/folhas" />
+
+    <ImageView
+        android:id="@+id/imgOvo"
+        android:layout_width="120dp"
+        android:layout_height="89dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btmFruta"
+        app:srcCompat="@drawable/ovo" />
+
+    <ImageView
+        android:id="@+id/imgCarne"
+        android:layout_width="120dp"
+        android:layout_height="89dp"
+        android:layout_marginStart="147dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="144dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btmFolha"
+        app:srcCompat="@drawable/carnes" />
+
+    <TextView
+        android:id="@+id/txtvCadastraProduto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="61dp"
+        android:layout_marginEnd="38dp"
+        android:text="Selecione o tipo do alimento:"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</android.support.constraint.ConstraintLayout>
